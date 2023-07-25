@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{78D534C5-9C90-4E0D-B32E-0453D0A571A5}</ProjectGuid>
+    <ProjectGuid>{3B78A4C1-99F5-4F1B-BD77-50A93242986B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DOTNETTRAINEES</RootNamespace>
-    <AssemblyName>DOTNETTRAINEES</AssemblyName>
+    <RootNamespace>ACCESSEXAMPLE</RootNamespace>
+    <AssemblyName>ACCESSEXAMPLE</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,8 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
+    <StartupObject>ACCESSEXAMPLE.Publicaccess</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,13 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Public.cs" />
-    <Compile Include="Internal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publicaccess.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DOTNETTRAINEES\DOTNETTRAINEES.csproj">
+      <Project>{78d534c5-9c90-4e0d-b32e-0453d0a571a5}</Project>
+      <Name>DOTNETTRAINEES</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DOTNETTRAINEES
 {
-    internal class Accessspecifiers
+    internal class Internal
     {
-
-        public Accessspecifiers() {
-            Console.WriteLine("Welcome to accessspecifier class");
+        public Internal()
+        {
+            Console.WriteLine("Welcome to internal class");
         }
     }
 }
