@@ -18,7 +18,7 @@ namespace DOTNETTRAINEES
             float floatvalue = 0.1023f;
             double doublevalue = 1.23456789d;
 
-            Console.WriteLine($"{decimalvalue} {doublevalue} {floatvalue}");
+            Console.WriteLine($"{decimalvalue} {doublevalue} {floatvalue}");////////
         }
 
        
