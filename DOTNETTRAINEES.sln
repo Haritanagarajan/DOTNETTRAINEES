@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOTNETTRAINEES", "DOTNETTRA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACCESSEXAMPLE", "ACCESSEXAMPLE\ACCESSEXAMPLE.csproj", "{3B78A4C1-99F5-4F1B-BD77-50A93242986B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2", "Task2\Task2.csproj", "{233AFB6F-0DF4-4A54-956C-0E2166625015}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3B78A4C1-99F5-4F1B-BD77-50A93242986B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B78A4C1-99F5-4F1B-BD77-50A93242986B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B78A4C1-99F5-4F1B-BD77-50A93242986B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{233AFB6F-0DF4-4A54-956C-0E2166625015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{233AFB6F-0DF4-4A54-956C-0E2166625015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{233AFB6F-0DF4-4A54-956C-0E2166625015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{233AFB6F-0DF4-4A54-956C-0E2166625015}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
