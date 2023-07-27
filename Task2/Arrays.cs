@@ -106,10 +106,8 @@ namespace Task2
 
         public void Employees(out double bonuscal)
         {
-
             bonuscal = 0.2 * empsal + empbonus;
             Console.WriteLine($"THE BONUS IS:{bonuscal}");
-
         }
 
 
@@ -117,17 +115,17 @@ namespace Task2
         {
             Arrays arr = new Arrays();
             //objects for traineedetails mehod
-            object[] t1 = { "Harita", 21, 6382830515, "kovaipudur" };
+            object[] t1 = { "harita", 21, 6382830515, "kovaipudur" };
             object[] t2 = { "sharon", 21, 9984563765, "kovaipudur" };
-            object[] t3 = { "Ranita", 21, 2351897265, "kovaipudur" };
-            object[] t4 = { "Harishmitha", 21, 1237895643, "kovaipudur" };
-            //D2arrays();
+            object[] t3 = { "ranita", 21, 2351897265, "kovaipudur" };
+            object[] t4 = { "harishmitha", 21, 1237895643, "kovaipudur" };
+            D2arrays();
             Jaggedarrays();
             //usingparams concept
-            //Traineedetails(t1);
-            //Traineedetails(t2);
-            //Traineedetails(t3);
-            //Traineedetails(t4);
+            Traineedetails(t1);
+            Traineedetails(t2);
+            Traineedetails(t3);
+            Traineedetails(t4);
 
             for (int i = 0; i < 2; i++)
             {
