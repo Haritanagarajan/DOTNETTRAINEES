@@ -10,24 +10,32 @@ namespace Task3
 {
     internal class Arrayseg
     {
+        int? a = null;
+        int? b = null;
+        int? c = null;
+        
+        public void example1()
+        {
+
+        }
+        
         static void Main(string[] args)
         {
-           ArrayList array = new ArrayList();
-            array.Add(1);
-            array.Add(null);
-            array.Add(null);
-            array.Add(3);
-            array.Add(null);
-           
-            foreach(var b in array)
+            Arrayseg example = new Arrayseg();
+            ArrayList array = new ArrayList();
+            array.Add(example.a);
+            array.Add(example.b);
+            array.Add(example.c);
+         
+            foreach (var b in array)
             {
-                if(b == null)
+                if (b == null)
                 {
-                 Console.WriteLine("I HAVE VALUE");
+                    Console.WriteLine();
                 }
                 else
                 {
-                  Console.WriteLine(b);
+                    Console.WriteLine(b);
 
                 }
             }
@@ -35,5 +43,5 @@ namespace Task3
         }
     }
 
-    }
+}
 
