@@ -14,8 +14,6 @@ namespace Task3
         int? b = null;
         int? c = null;
        
-        
-        
         static void Main(string[] args)
         {
             Arrayseg example = new Arrayseg();
