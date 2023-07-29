@@ -10,14 +10,11 @@ namespace Task3
 {
     internal class Arrayseg
     {
-        int? a = null;
+        int? a = 10;
         int? b = null;
         int? c = null;
+       
         
-        public void example1()
-        {
-
-        }
         
         static void Main(string[] args)
         {
@@ -31,7 +28,8 @@ namespace Task3
             {
                 if (b == null)
                 {
-                    Console.WriteLine();
+                    var nullcolleace = b ?? " i have null";
+                    Console.WriteLine(nullcolleace);
                 }
                 else
                 {

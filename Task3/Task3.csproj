@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Task3.Objparameter</StartupObject>
+    <StartupObject>Task3.Arrayseg</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
