@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task5
 {
+    //sealed keyword for base class so it cant be inherited by derived class
     sealed internal class Sealedclass
     {
         public void add()
