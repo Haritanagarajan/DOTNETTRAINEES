@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3154500F-8625-4965-8799-BFC7A7C9407E}</ProjectGuid>
+    <ProjectGuid>{2915061F-5BCB-4B75-A6BA-362AEDB1D38D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Task5</RootNamespace>
-    <AssemblyName>Task5</AssemblyName>
+    <RootNamespace>Task6</RootNamespace>
+    <AssemblyName>Task6</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Task5.MainAbstraction</StartupObject>
+    <StartupObject>Task6.ListLambda</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,12 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstractioneg.cs" />
-    <Compile Include="Directives.cs" />
-    <Compile Include="Enumeration.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Interfaces.cs" />
+    <Compile Include="Lambda.cs" />
+    <Compile Include="ListLambda.cs" />
+    <Compile Include="NewVirtual.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sealedclass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

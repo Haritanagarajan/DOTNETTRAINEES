@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Task5
 {
 
+    //enum
     public enum Area
     {
         circle,
@@ -14,21 +15,24 @@ namespace Task5
         square
     }
 
+    //main method
     internal class MainEnum
     {
         static void Main(string[] args)
         {
+
             MainEnum mainEnum = new MainEnum();
+
+            //passing parameters to enum
             mainEnum.calculate(Area.circle);
             mainEnum.calculate(Area.rectangle);
             mainEnum.calculate(Area.square);
             Console.ReadLine();
         }
-       
+
         public void calculate(Area en)
         {
-           
-
+            //iterating thropugh enum if condition matches
             if (en == Area.rectangle)
             {
                 Console.WriteLine("Enter length:");
@@ -50,7 +54,7 @@ namespace Task5
                 Console.WriteLine("Area of Square is : " + side * side);
             }
         }
-    
+
 
     }
 }

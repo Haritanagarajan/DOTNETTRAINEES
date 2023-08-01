@@ -61,7 +61,7 @@ namespace Task5
         {
             if (left < right)
             {
-                int pivot = Partition(arr, left, right);
+                int pivot = CalculateQuicksort(arr, left, right);
 
                 if (pivot > 1)
                 {
@@ -74,7 +74,7 @@ namespace Task5
             }
         }
 
-        public int Partition(int[] arr, int left, int right)
+        public int CalculateQuicksort(int[] arr, int left, int right)
         {
             int pivot = arr[left];
 
@@ -93,7 +93,7 @@ namespace Task5
                 if (left < right)
                 {
                     if (arr[left] == arr[right]) return right;
-                    int temp = arr[left];
+                    var temp = arr[left];
                     arr[left] = arr[right];
                     arr[right] = temp;
                 }
@@ -132,7 +132,7 @@ namespace Task5
             //quicksort
            #region quicksort
             int[] arr = new int[] { 1, 20, 50, 80, 2, 5, 8 };
-            Console.WriteLine("Original array : ");
+            Console.WriteLine("Bfore sorting : ");
             foreach (var sortedlist in arr)
             {
                 Console.Write(" " + sortedlist);
@@ -140,7 +140,7 @@ namespace Task5
             Console.WriteLine();
             directives.Quicksort(arr, 0, arr.Length - 1);
             Console.WriteLine();
-            Console.WriteLine("Sorted array : ");
+            Console.WriteLine("After sorting : ");
             foreach (var sortedlist in arr)
             {
                 Console.Write(" " + sortedlist);
