@@ -31,10 +31,13 @@ namespace Task6
         {
             //getting input fom user
             Console.WriteLine("Calculate simple interest" + "\n");
+
             Console.WriteLine("Enter the Principal Amount:");
             double principalamnt = Convert.ToInt64(Console.ReadLine());
+
             Console.WriteLine("Enter the No of Years :");
             int yearsval = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("Enter the Rate of Interest:");
             int interestval = Convert.ToInt32(Console.ReadLine());
 
