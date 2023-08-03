@@ -25,15 +25,21 @@ namespace Task7
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter the username:");
+            string nameof = Console.ReadLine();
+            Console.WriteLine("Enter Csharpscore:");
+            double Csharpscore = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("Enter UIScore:");
+            double UIScore = Convert.ToInt64(Console.ReadLine());
+            double Avgscor = Csharpscore + UIScore / 2;
             Trainee t;
             t = new Trainee();
             try
             {
-                Console.WriteLine("Enter the username:");
-                string nameof = Console.ReadLine();
+               
                 t.Name = nameof;
-                t.CSharpScore = 100;
-                t.UIScore = 120;
+                t.CSharpScore = Csharpscore;
+                t.UIScore = UIScore;
                 CheckError1(t);
 
             }
@@ -45,10 +51,7 @@ namespace Task7
             try
             {
 
-                Console.WriteLine("Enter the score:");
-                int score = Convert.ToInt32(Console.ReadLine());
-
-                t.AvgScore = score;
+                t.AvgScore = (int)Avgscor;
                 CheckError2(t);
 
             }

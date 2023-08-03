@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Task7.MainPointers</StartupObject>
+    <StartupObject>Task7.MainCustomException</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

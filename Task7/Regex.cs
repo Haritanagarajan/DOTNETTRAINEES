@@ -7,7 +7,6 @@ namespace Task7
     internal class RegexExp
     {
        
-
     }
 
     internal class MainRegex

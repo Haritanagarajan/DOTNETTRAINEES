@@ -7,12 +7,15 @@ using System.Threading.Tasks;
 
 namespace Task7
 {
-   
+
     internal class MainPointers
     {
         static void Main(string[] args)
         {
-            string[] details ={ "harita", "ranita", "savitha", "harish" };
+            string[] details = { "harita", "ranita", "savitha", "harish" };
+
+            char char1 = 'a';
+            char char2 = 'b';
 
             Console.WriteLine("ADDITION OF TWO MATRIXES");
 
@@ -73,7 +76,7 @@ namespace Task7
 
             Addition(matrix1, matrix2, result, rows, cols);
             TraineeDetails(details);
-
+            Swapping(char1, char2);
 
             Console.ReadLine();
 
@@ -117,16 +120,35 @@ namespace Task7
         {
             fixed (string* p1 = details)
             {
+
                 Console.WriteLine("\t");
-                for(int i = 0; i < details.Length; i++)
+                for (int i = 0; i < details.Length; i++)
                 {
-                    Console.Write(details[i]);
+                    Console.WriteLine(details[i]);
+                    Console.WriteLine((int)p1 + i);
+
                     Console.WriteLine("\n");
 
                 }
             }
 
         }
+
+        public unsafe static void Swapping(char char1, char char2)
+        {
+            char* ptr1 = &char1;
+            char* ptr2 = &char2;
+
+            Console.WriteLine($"Strings abefore swapping: char 1 is...{char1} ...char2 is...{char2}");
+
+            *ptr1 = Convert.ToChar(*ptr1 + *ptr2);
+            *ptr2 = Convert.ToChar(*ptr1 - *ptr2);
+            *ptr1 = Convert.ToChar(*ptr1 - *ptr2);
+
+            Console.WriteLine($"Strings abefore swapping: char 1 is...{char1} ...char2 is...{char2}");
+        }
+
     }
 }
+
 
