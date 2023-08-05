@@ -120,12 +120,13 @@ namespace Task7
         {
             fixed (string* p1 = details)
             {
+                string* ptrs = p1;
 
                 Console.WriteLine("\t");
                 for (int i = 0; i < details.Length; i++)
                 {
                     Console.WriteLine(details[i]);
-                    Console.WriteLine((int)p1 + i);
+                    Console.WriteLine((int)ptrs + i);
 
                     Console.WriteLine("\n");
 
