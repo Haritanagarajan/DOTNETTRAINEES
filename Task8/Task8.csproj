@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Task8.FileExists</StartupObject>
+    <StartupObject>Task8.ActionDelegateEg</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CsvHelper, Version=30.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
@@ -71,11 +71,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionDelegateEg.cs" />
     <Compile Include="AddToContent.cs" />
     <Compile Include="CopyFile.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="EmpReport.cs" />
     <Compile Include="FileExists.cs" />
+    <Compile Include="FileProperties.cs" />
     <Compile Include="FilesRead.cs" />
     <Compile Include="FilesWrite.cs" />
+    <Compile Include="FuncDelegateEg.cs" />
     <Compile Include="MoveFiles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
