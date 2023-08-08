@@ -13,7 +13,7 @@ namespace Task9
 
         public void T1()
         {
-             Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.BackgroundColor = ConsoleColor.Black;
             Console.WriteLine("THIS IS THREAD 1");
            

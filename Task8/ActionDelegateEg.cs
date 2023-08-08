@@ -3,11 +3,9 @@ using System.Collections.Generic;
 
 namespace Task8
 {
-    public delegate void ActionList(ref List<string> names);
-
     internal class ActionDelegateEg
     {
-        public void TodoList(ref List<string> names)
+        public void TodoList(List<string> names)
         {
             Console.WriteLine(string.Join(", ", names));
         }
@@ -23,9 +21,9 @@ namespace Task8
 
             ActionDelegateEg actionDelegateEg = new ActionDelegateEg();
 
-            ActionList ll = actionDelegateEg.TodoList;
+            Action<List<string>> Actiondelegate = actionDelegateEg.TodoList;
 
-            ll(ref names);
+            Actiondelegate(names);  
 
             Console.ReadLine();
         }

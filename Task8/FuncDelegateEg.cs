@@ -12,8 +12,7 @@ namespace Task8
         static int Funn(int num)
         {
             Console.WriteLine("Multiplication table using Func Delegate ");
-
-         
+ 
 
             for(int i = 0;  i <= 10; i ++)
             {
