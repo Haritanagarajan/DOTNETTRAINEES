@@ -44,8 +44,7 @@ namespace Task9
     internal class Name
     {
         public static void Send(object sender, TraineeEvent e)
-        {
-        
+        { 
             Console.WriteLine($"Employee Name is : {e.Name}");
 
         }
