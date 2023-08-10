@@ -20,7 +20,6 @@ namespace Task9
     {
         public event EventHandler<TraineeEvent> OnCreated;
 
-        int count = 0;
         public void CreateDetails(int id, string name , string desig ,double salary )
         {
             if (OnCreated !=  null)

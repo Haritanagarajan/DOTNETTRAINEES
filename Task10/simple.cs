@@ -64,14 +64,36 @@ namespace Task10
 
                 }
             }
+
+            //props
+
+            PropertyInfo[] propertyInfo = classtype.GetProperties();
+
+            foreach(PropertyInfo prop in propertyInfo)
+            {
+                object[] arr = prop.GetCustomAttributes(true);
+
+                foreach(Attribute attribute in arr)
+                {
+                    if(attribute is CustomAttributeEgg customAttributeEgg)
+                    {
+                        Console.WriteLine($"{classtype.Name}, {customAttributeEgg.id},{customAttributeEgg.name}");
+
+                    }
+                }
+            }
         }
     }
     
      [CustomAttributeEgg(104, "class")]
     internal class Reflect
     {
-        public int id;
-        public string name;
+        [CustomAttributeEgg(183, "Props")]
+
+        public int id { get; set; }
+        [CustomAttributeEgg(105, "Props")]
+
+        public string name { get; set; }
 
         [CustomAttributeEgg(103, "Constructor")]
         public Reflect(int id, string name)
