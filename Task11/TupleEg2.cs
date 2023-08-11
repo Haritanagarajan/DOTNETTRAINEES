@@ -8,63 +8,77 @@ namespace Task11
 {
     internal class TupleEg2
     {
-        public void CGG2((string name, string company,int id, string desig, double sal)s)
+        
+        public void DetailsPartition((string[] Cgvak,string[] G2tech,int strength)y)
         {
-            if(s.company == "Cgvak")
-            {
-                Console.WriteLine("CG MEMBERS");
-                Console.WriteLine($"id is :{s.id}");
-                Console.WriteLine($"name is :{s.name}");
-                Console.WriteLine($"name is :{s.company}");
-                Console.WriteLine($"Designation is :{s.desig}");
-                Console.WriteLine($"Salary is :{s.sal}");
 
-            }
-            else if(s.company == "G2tech")
-            {
-                Console.WriteLine("G2 MEMBERS");
-                Console.WriteLine($"id is :{s.id}");
-                Console.WriteLine($"name is :{s.name}");
-                Console.WriteLine($"name is :{s.company}");
-                Console.WriteLine($"Designation is :{s.desig}");
-                Console.WriteLine($"Salary is :{s.sal}");
+            Console.WriteLine("G2tech list is:");
 
-            }
-            else
+            for (int i = 0; i < y.strength; i++)
             {
-                Console.WriteLine("No Company Found!...:(");
+                if (y.G2tech[i] != null)
+                {
+                    Console.WriteLine(y.G2tech[i]);
+                }
             }
+            Console.WriteLine("\n");
+            Console.WriteLine("Cgvak list is:");
+            for (int i = 0; i < y.strength; i++)
+            {
+                if (y.Cgvak[i] != null)
+                {
+                    Console.WriteLine(y.Cgvak[i]);
 
+                }
+            }
 
         }
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+
             TupleEg2 tupleEg2 = new TupleEg2();
 
-            Console.WriteLine("Enter for Looping");
-            int loop1 = int.Parse(Console.ReadLine());
+            string[] Name;
+            string[] Cgvak;
+            string[] G2tech;
 
-            for (int i = 0; i < loop1; i++)
+            Console.WriteLine("Enter the trainee strength:");
+            int strength = Convert.ToInt32(Console.ReadLine());
+
+            Name = new string[strength];
+            G2tech = new string[strength];
+            Cgvak = new string[strength];
+
+            for (int i = 0; i < strength; i++)
             {
-                Console.WriteLine("Enter Id:");
-                int Id = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter student name");
+                Name[i] = Console.ReadLine();
 
-                Console.WriteLine("Enter Name:");
-                string Name = Console.ReadLine();
+                Console.WriteLine("Enter your Company as Cgvak or G2tech:");
+                string companybase = Console.ReadLine();
 
-                Console.WriteLine("Enter Company Cgvak/G2tech:");
-                string Company = Console.ReadLine();
-
-                Console.WriteLine("Enter Desig :");
-                string Desig = Console.ReadLine();
-
-                Console.WriteLine("Enter Salary:");
-                double Salary = double.Parse(Console.ReadLine());
-
-                tupleEg2.CGG2((Name,Company,Id,Desig,Salary));
-
+                if (companybase == "Cgvak")
+                {
+                    Cgvak[i] = Name[i];
+                }
+                else if (companybase == "G2tech")
+                {
+                    G2tech[i] = Name[i];
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input. Enter 'Cg' or 'G2'.");
+                    i--;
+                }
             }
+            Console.WriteLine("\n");
+
+            tupleEg2.DetailsPartition((Cgvak, G2tech,strength));
+
             Console.ReadLine();
         }
     }
+
 }
+
+

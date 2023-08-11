@@ -2,12 +2,13 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
+    <LangVersion>latest</LangVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5C77C63E-B9DB-48D3-8DDA-292E2A0467D3}</ProjectGuid>
+    <ProjectGuid>{03C32B00-7819-4B8E-A03B-F65134BBBA22}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Task11</RootNamespace>
-    <AssemblyName>Task11</AssemblyName>
+    <RootNamespace>Task112</RootNamespace>
+    <AssemblyName>Task112</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Task11.TupleEg2</StartupObject>
+    <StartupObject>Task112.HybridInheritanceProject</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,13 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AsyncAwaitEg1.cs" />
-    <Compile Include="CommandArgumentsProject.cs" />
+    <Compile Include="HybridInheritanceProject.cs" />
+    <Compile Include="IsExternalInit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TupleEg1.cs" />
-    <Compile Include="TupleEg2.cs" />
-    <Compile Include="VariablesTypeEg.cs" />
+    <Compile Include="RecordStruct.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

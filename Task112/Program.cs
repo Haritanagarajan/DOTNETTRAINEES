@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task11
+namespace Task112
 {
-    public class Program
+   
+    internal class Program
     {
-       
+        static void Main(string[] args)
+        {
+        }
     }
 }

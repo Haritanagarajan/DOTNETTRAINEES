@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Task11
 {
-    internal class TupleEg1
+    public class TupleEg1
     {
         public void Emp(string name ,int id ,string desig , double sal)
         {
-          
             var Employeedetails = ((name,id,desig,sal));
             Console.WriteLine("\n");
             Console.WriteLine($"id is :{Employeedetails.Item2}");
@@ -21,7 +20,7 @@ namespace Task11
 
         }
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             TupleEg1 tupleEg = new TupleEg1();
 

@@ -4,10 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task11
+namespace System.Runtime.CompilerServices
 {
-    public class Program
-    {
-       
-    }
+    internal static class IsExternalInit { }
 }
+
